@@ -1,7 +1,9 @@
 import ClientWrapper from "@/components/ClientWrapper";
 import Recentprojects from "@/components/Recentprojects";
 import Experience from "@/components/Experience";
-import Approach from "@/components/Approach";
+import Footer from "@/components/Footer";
+import { FloatingNavDemo } from "@/components/Navigation";
+
 
 export default function Home() {
   return (
@@ -10,10 +12,12 @@ export default function Home() {
         <h1 className="text-3xl justify-center items-center">
           This is the Zain portfolio website
         </h1>
+        <FloatingNavDemo/>
         <ClientWrapper /> {/* Now safely wrapping client components */}
         <Recentprojects/>
         <Experience/>
-        <Approach/>
+        <Footer/>
+      
       </div>
     </main>
   );
